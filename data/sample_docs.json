@@ -1,0 +1,10 @@
+[
+    "Large language models like GPT-3 are trained on huge corpora.",
+    "Retrieval-Augmented Generation uses external documents to enhance answers.",
+    "BM25 is a sparse information retrieval algorithm using term frequency.",
+    "Faiss enables fast similarity search over dense embeddings.",
+    "Hybrid search combines semantic and keyword-based search methods.",
+    "Vector databases are used to store and retrieve dense embeddings.",
+    "LangChain and LlamaIndex are common frameworks for building RAG apps.",
+    "Dense retrieval leverages sentence transformers to find similar documents."
+]
