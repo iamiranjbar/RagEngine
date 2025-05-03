@@ -4,3 +4,9 @@
 
 # Environments
 rag/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+retrievers/__pycache__/
