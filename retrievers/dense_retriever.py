@@ -41,11 +41,14 @@ class DenseRetriever:
         D, I = self.index.search(np.array([query_embedding]), top_k)
         found_indices = I[0]
         similarity_scores = D[0]
-        return [(self.documents[i], float(similarity_scores[rank])) for rank, i in enumerate(found_indices)]
+        raw_results = [(float(similarity_scores[rank]), self.documents[i]) for rank, i in enumerate(found_indices)]
+        max_score = max(score for score, _ in raw_results)
+        if max_score == 0:
+            return raw_results
+        normalized_results = [(score / max_score, doc) for score, doc in raw_results]
+        return normalized_results
 
-dense_retriever = DenseRetriever()
-documents = DocumentLoader.load_documents_from_json("data/sample_docs.json")
-dense_retriever.build_index(documents)
-results = dense_retriever.retrieve("How does RAG work?")
-for doc, score in results:
-    print(f"{score:.4f} → {doc}")
+    def show_fancy_results(self, query: str, top_k: int = 3) -> None:
+        results = self.retrieve(query, top_k)
+        for score, doc in results:
+            print(f"Score: {score:.2f}\nDoc: {doc}\n")
