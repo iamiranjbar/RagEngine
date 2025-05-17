@@ -1,0 +1,5 @@
+{
+  "how does retrieval augmented generation work?||Retrieval-Augmented Generation uses external documents to enhance answers.": 0,
+  "how does retrieval augmented generation work?||Dense retrieval leverages sentence transformers to find similar documents.": 2,
+  "how does retrieval augmented generation work?||BM25 is a sparse information retrieval algorithm using term frequency.": -2
+}
