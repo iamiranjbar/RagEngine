@@ -7,5 +7,8 @@
   "What is RAG?||Hybrid search combines semantic and keyword-based search methods.": -1,
   "Langchain||LangChain and LlamaIndex are common frameworks for building RAG apps.": 1,
   "Langchain||Large language models like GPT-3 are trained on huge corpora.": -1,
-  "Langchain||Faiss enables fast similarity search over dense embeddings.": -1
+  "Langchain||Faiss enables fast similarity search over dense embeddings.": -1,
+  "What is rag?||LangChain and LlamaIndex are common frameworks for building RAG apps.": 1,
+  "What is rag?||Large language models like GPT-3 are trained on huge corpora.": -1,
+  "What is rag?||Hybrid search combines semantic and keyword-based search methods.": -1
 }
