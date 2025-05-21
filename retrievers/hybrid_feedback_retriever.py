@@ -55,7 +55,7 @@ class HybridRetrieverWithFeedback(HybridRetriever):
         results = self.retrieve(query, top_k)
         for doc, score in results:
             print(f"Score: {score:.2f}\nDoc: {doc}\n")
-            feedback = input("Relevant? (y/n): ").strip().lower()
+            feedback = input("👍👎 Was helpful? (y/n): ").strip().lower()
             self.record_feedback(query, doc, feedback == "y")
         
     def log_feedback(self):
