@@ -7,6 +7,10 @@ This project is designed to:
 - Act as a practical base for local or remote LLM deployments
 - Support plug-and-play retrievers, scoring logic, and generation backends
 
+## 🧭 System Architecture
+
+![RAG Architecture](assets/architecture.png)
+
 ### 🔧 Features
 - ✅ BM25-based sparse retrieval using `rank_bm25`
 - ✅ Dense vector search using SentenceTransformers + Faiss
